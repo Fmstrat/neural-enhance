@@ -99,7 +99,7 @@ Here's the simplest way you can call the script using ``docker``, assuming you'r
 .. code:: bash
 
     # Download the Docker image and show the help text to make sure it works.
-    docker run --rm -v `pwd`:/ne/input -it alexjc/neural-enhance --help
+    docker run --rm -v "$(pwd)":/ne/input -it alexjc/neural-enhance --help
 
 **Single Image** — In practice, we suggest you setup an alias called ``enhance`` to automatically expose the folder containing your specified image, so the script can read it and store results where you can access them.  This is how you can do it in your terminal console on OSX or Linux:
 
